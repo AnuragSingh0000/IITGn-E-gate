@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Redirect</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .button {
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .question {
+            text-align: center;
+            font-size: 24px;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form action="/scanner">
+            <button class="button" type="submit">QR Scanner</button> <!-- Button to go to the visitor page -->
+        </form>
+        <form action="/display">
+            <button class="button" type="submit">Show Data</button> <!-- Button to go to the security guard page -->
+        </form>
+    </div>
+    
+</body>
+</html>

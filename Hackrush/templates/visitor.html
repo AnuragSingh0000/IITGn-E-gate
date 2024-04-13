@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .form-section {
+            margin-bottom: 20px;
+        }
+        .form-section h2 {
+            margin-bottom: 10px;
+        }
+        .form-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-section input[type="text"],
+        .form-section input[type="email"],
+        .form-section input[type="number"],
+        .form-section textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .form-section input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-section input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .button {
+            margin: 10px;
+            padding: 15px 25px;
+            font-size: 18px;
+            text-align: center;
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            outline: none;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome Visitor!</h1>
+    <div class="container">
+        <form action="/submit" method="post">
+            <div class="form-section">
+                <h2>Visitor Information</h2>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="place">Place you are coming from:</label>
+                <input type="text" id="place" name="place" required>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+
+                <label for="phoneNumber">Phone Number:</label>
+                <input type="text" id="phoneNumber" name="phoneNumber" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="reason">Reason for Visit:</label>
+                <textarea id="reason" name="reason" rows="4" required></textarea>
+
+                <label for="dateOfVisit">Date of Visit:</label>
+                <input type="date" id="dateOfVisit" name="dateOfVisit" required>
+
+                <label for="timeOfVisit">Time of Visit:</label>
+                <input type="time" id="timeOfVisit" name="timeOfVisit" required>
+
+                <label for="dateOfLeaving">Date of Leaving:</label>
+                <input type="date" id="dateOfLeaving" name="dateOfLeaving" required>
+
+                <label for="timeOfLeaving">Time of Leaving:</label>
+                <input type="time" id="timeOfLeaving" name="timeOfLeaving" required>
+            </div>
+            
+            <div class="form-section">
+                <h2>Whom You Are Visiting</h2>
+                <label for="studentName">Name of Student:</label>
+                <input type="text" id="studentName" name="studentName" required>
+
+                <label for="relationship">Relationship with Student:</label>
+                <input type="text" id="relationship" name="relationship" required>
+
+                <label for="studentEmail">Student's Email:</label>
+                <input type="email" id="studentEmail" name="studentEmail" required>
+
+                <label for="rollNumber">Student's Roll Number:</label>
+                <input type="text" id="rollNumber" name="rollNumber" required>
+
+                <label for="studentPhoneNumber">Student's Phone Number:</label>
+                <input type="text" id="studentPhoneNumber" name="studentPhoneNumber" required>
+            </div>
+
+            
+            
+            <button class="button" type="submit">Submit</button> <!-- Button to submit the form -->
+        </form>
+    </div>
+</body>
+</html>
