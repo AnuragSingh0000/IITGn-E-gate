@@ -162,7 +162,7 @@ def scanner():
         cursor = ursql.connection.cursor()
 
         # Query the MySQL table
-        cursor.execute("SELECT * FROM vis")
+        cursor.execute("SELECT * FROM visit")
 
         # Fetch all rows from the query result
         data = cursor.fetchall()
