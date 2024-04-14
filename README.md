@@ -14,5 +14,5 @@ The Home page of the website provides three different pages for visitors, reside
 
 **Some more additions** We wished to add a notification system for the guards if a visitor has exceeded his time limit of staying in the college. Also, we can optimise things by directly processing info on scanning the QR and just giving the result whether a visitor should be allowed or not. We also wished to add an email verification from the host's end.
 
-**For Deployment** Firstly make sure that all the libraries mentioned in the requirements.txt are installed. Then download the repo and upload the dump file in mysql server. At the end change the configuration in app.py file according to your mysql credentials.
+**For Deployment** Firstly make sure that all the libraries mentioned in the requirements.txt are installed. Then download the repo and upload the dump file in mysql server. Before importing the dumpfile to the mysql server, open it using any text editor and at the beginning of the code write "USE your_database_name", Replace your_database_name with the name of the database where you want to import the data, then save that dump file. At the end change the configuration in app.py file according to your mysql credentials. Ready!
 
