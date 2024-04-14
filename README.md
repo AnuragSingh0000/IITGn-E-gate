@@ -10,9 +10,16 @@ The Home page of the website provides three different pages for visitors, reside
 
 **The Scanning Process** On scanning the QR code of the visitor all the important visitors' info is shown which can be verified by the guard and based on that he can allow the visitor to enter. On the other hand when residents scan their qr only their IIT Gn email is shown which should indicate that they are the residents.
 
-**About the files** The files are present in the Hackrush folder and includes all the frontend web templates created using html and css. It also includes a main python file, app.py which connects the front end and the back end. The backend info is present on the database named iitgn created on mysql.
+**About the files** The files are present in the Hackrush folder and includes all the frontend web templates created using html and css. It also includes a main python file, app.py which connects the front end and the back end. The backend info is present on the database named iitgn created on mysql. For preliminary usage we have created dummy tables named 'email' for storing info of valid iitgn students and 'guard' for valid iitgn security guard.
 
 **Some more additions** We wished to add a notification system for the guards if a visitor has exceeded his time limit of staying in the college. Also, we can optimise things by directly processing info on scanning the QR and just giving the result whether a visitor should be allowed or not. We also wished to add an email verification from the host's end.
 
-**For Deployment** Firstly make sure that all the libraries mentioned in the requirements.txt are installed. Then download the repo and upload the dump file in mysql server. Before importing the dumpfile to the mysql server, open it using any text editor and at the beginning of the code write "USE your_database_name", Replace your_database_name with the name of the database where you want to import the data, then save that dump file. At the end change the configuration in app.py file according to your mysql credentials. Ready!
+**For Deployment** Firstly make sure that all the libraries mentioned in the requirements.txt are installed. Then download the repository and upload the dump file in mysql server. Before importing the dumpfile to the mysql server, make sure that you have a database in the mysql server named "iitgn". At the end change the configuration in app.py file according to your mysql credentials. There are two instances where you have to make changes according to your credentials, one is at line 10 and one is at line 179.
+That's it! You'are ready to see the website.
+Thank You!
+
+Feel free to reach out to us:
+Collaborators:
+1. Anurag Singh - 23110035@iitgn.ac.in
+2. Aditya Borate - 23110065@iitgn.ac.in
 
