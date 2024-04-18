@@ -18,7 +18,6 @@ The Home page of the website provides three different pages for visitors, reside
 That's it! You'are ready to see the website.
 Thank You!
 
-Feel free to reach out to us:
 Collaborators:
 1. Anurag Singh - 23110035@iitgn.ac.in
 2. Aditya Borate - 23110065@iitgn.ac.in
